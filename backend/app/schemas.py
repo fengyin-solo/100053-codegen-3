@@ -244,3 +244,27 @@ class AssessEntry(BaseModel):
     field_5: str | None = None  # 评估人员
     field_6: str | None = None  # 评估结论
     field_7: str | None = None  # 评估状态
+
+class OutsourceEntry(BaseModel):
+    """委外合同明细结构。"""
+
+    field_0: str | None = None  # 合同编号
+    field_1: str | None = None  # 委外单位
+    field_2: str | None = None  # 服务范围
+    field_3: str | None = None  # 天窗单价
+    field_4: str | None = None  # 处置单价
+    field_5: str | None = None  # 扣款比例
+    field_6: str | None = None  # 月度上限
+    field_7: str | None = None  # 合同状态
+
+class OutsourceSettleEntry(BaseModel):
+    """委外结算单明细结构。"""
+
+    field_0: str | None = None  # 结算单号
+    field_1: str | None = None  # 合同编号
+    field_2: str | None = None  # 委外单位
+    field_3: str | None = None  # 结算月份
+    field_4: str | None = None  # 汇总金额
+    field_5: str | None = None  # 扣款金额
+    field_6: str | None = None  # 应结金额
+    field_7: str | None = None  # 结算状态
